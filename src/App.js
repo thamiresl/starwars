@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <PlanetProvider>
-        </Table >
+        <Table />
       </PlanetProvider>
     </div>
   );
