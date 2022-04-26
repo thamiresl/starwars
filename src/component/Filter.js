@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import PlanetContext from '../context/PlanetContext';
 
 function Filter() {
@@ -27,8 +27,20 @@ function Filter() {
     filterNamePlanet(value);
   };
 
+  useEffect(() => {
+    const filterUpdate = () => {
+      setFilterByNumericValues({
+        column: option[0],
+        comparison: 'maior que',
+        value: 0,
+      });
+    };
+    filterUpdate();
+  }, [option]);
+
   const handleClick = () => {
     const { column, comparison, value } = filterByNumericValues;
+    setOption(option.filter((element) => column !== element));
     switch (comparison) {
     case 'maior que':
       return setData(data.filter((planet) => +planet[column] > +value));
