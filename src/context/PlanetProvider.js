@@ -22,7 +22,7 @@ function PlanetProvider({ children }) {
   };
 
   return (
-    <PlanetContext.Provider value={ { data, filterNamePlanet } }>
+    <PlanetContext.Provider value={ { data, setData, filterNamePlanet } }>
       { children }
     </PlanetContext.Provider>
   );
