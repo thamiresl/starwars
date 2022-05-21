@@ -1,1 +1,1 @@
-Projeto Starwars, desenvolvido durante o módulo de Frontend, no curso de sesenvolvimento web da Trybe.
+Projeto Starwars, desenvolvido durante o módulo de Frontend, no curso de sesenvolvimento web da Trybe!
